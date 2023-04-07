@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/7/d/7d4e266a9aa449773a69a0a6a1e164f0.jpg",
+      "name": "sad",
+      "count": 1,
+      "size": {
+        "width": 10,
+        "height": 10
+      },
+      "weight": "100g",
+      "comments": [
+        {
+          "productId": 4,
+          "date": "2023-04-07T18:48:22.083Z",
+          "description": "cool"
+        },
+        {
+          "productId": 4,
+          "date": "2023-04-07T18:49:01.179Z",
+          "description": "hello"
+        },
+        {
+          "productId": 4,
+          "date": "2023-04-07T18:49:34.348Z",
+          "description": "kuku"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "imageUrl": "https://payalnya.com.ua/images/detailed/11/apple-iphone-13-pro-max.primaryproductimage.code-MDAwMDAwMDAwMDAwMDIyNzU2.format-hardware-configurator-l.png",
+      "name": "hfd",
+      "count": 1,
+      "size": {
+        "width": 10,
+        "height": 10
+      },
+      "weight": "100g",
+      "comments": [],
+      "id": 5
+    },
+    {
+      "imageUrl": "https://payalnya.com.ua/images/detailed/11/apple-iphone-13-pro-max.primaryproductimage.code-MDAwMDAwMDAwMDAwMDIyNzU2.format-hardware-configurator-l.png",
+      "name": "fsd",
+      "count": 1,
+      "size": {
+        "width": 10,
+        "height": 10
+      },
+      "weight": "100g",
+      "comments": [],
+      "id": 6
+    }
+  ]
+}
