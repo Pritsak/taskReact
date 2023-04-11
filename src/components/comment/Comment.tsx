@@ -1,5 +1,4 @@
-import React from 'react'
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
 interface Props {
   description: string;
@@ -12,7 +11,7 @@ function Comment(props: Props) {
       <h4 className={styles.date}>{new Date(props.date).toLocaleString()}</h4>
       <p>{props.description}</p>
     </div>
-  )
+  );
 }
 
-export default Comment
+export default Comment;

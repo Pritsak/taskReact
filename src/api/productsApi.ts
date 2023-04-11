@@ -6,6 +6,11 @@ import {
 import { ProductPayloadRequest } from "./types";
 import { Product } from "../models/product";
 
+interface Params {
+    _sort: string,
+    _order: string
+}
+
 export const productsApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: "http://localhost:8080",
@@ -13,13 +18,14 @@ export const productsApi = createApi({
     tagTypes: ["Products"],
     reducerPath: "products",
     endpoints: (builder) => ({
-        getProducts: builder.query<Array<Product>, any>({
-            query: () => ({
+        getProducts: builder.query<Array<Product>, Params>({
+            query: (params) => ({
                 url: "products",
                 method: "GET",
+                params, 
             }),
             providesTags: (result) =>
-                 result ? result.map(({ id }) => ({ type: 'Products', id })) : [],
+                result ? result.map(({ id }) => ({ type: 'Products', id })) : [],
         }),
         getProduct: builder.query<Product, any>({
             query: (id: number) => ({
@@ -27,7 +33,7 @@ export const productsApi = createApi({
                 method: "GET",
             }),
             providesTags: (result) =>
-                 result ? [{ type: 'Products' }] : [],
+                result ? [{ type: 'Products' }] : [],
         }),
         deleteProduct: builder.mutation({
             query: (id: number) => ({
