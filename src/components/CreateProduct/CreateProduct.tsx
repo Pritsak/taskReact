@@ -18,7 +18,7 @@ interface InputData {
 }
 
 export const validateSchema = Yup.object({
-  imageUrl: Yup.string().url().required(),
+  imageUrl: Yup.string().required(),
   name: Yup.string().min(3).max(25).required(),
   count: Yup.number().min(1).max(999).required(),
   width: Yup.number().required(),
